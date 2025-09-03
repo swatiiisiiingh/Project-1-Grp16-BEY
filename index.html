@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Check-it | Fashion AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Check-it</h1>
+    <p>A Fashion AI which gives you multiple options to choose from</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="project.html">Project Details</a>
+      <a href="fqa.html">FQA</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
+
+  <section class="upload-box">
+    <h2>Upload Clothing Image</h2>
+    <input type="file" accept="image/*">
+    <button onclick="showResults()">Search Similar</button>
+  </section>
+
+  <section class="results" id="results">
+    <h2>Results</h2>
+    <div class="products">
+      <div class="card"><img src="https://i.ibb.co/Tv0j4D5/jeans.png" alt="input jeans"><p>Input: Jeans</p></div>
+      <div class="card"><img src="https://i.ibb.co/L8mykVr/dress1.png" alt="dress1"><p>Similar Dress 1</p></div>
+      <div class="card"><img src="https://i.ibb.co/kQx1K61/dress2.png" alt="dress2"><p>Similar Dress 2</p></div>
+      <div class="card"><img src="https://i.ibb.co/WykQtwT/dress3.png" alt="dress3"><p>Similar Dress 3</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Check-it | AI Fashion Platform</p>
+  </footer>
+
+  <script>
+    function showResults() {
+      document.getElementById("results").style.display = "block";
+    }
+  </script>
+</body>
+</html>
